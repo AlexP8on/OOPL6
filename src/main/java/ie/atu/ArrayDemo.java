@@ -34,5 +34,17 @@ public class ArrayDemo {
 
         Scanner myScan = new Scanner(System.in);
 
+        try
+        {
+            System.out.println("Enter a new number: ");
+            anArray[10]= myScan.nextInt();
+
+        }
+
+        catch(ArrayIndexOutOfBoundsException aiob)
+        {
+            System.out.println("We went out of the allocated memory block " + aiob);
+        }
+
     }
 }
