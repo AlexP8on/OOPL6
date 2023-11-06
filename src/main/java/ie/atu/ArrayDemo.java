@@ -1,5 +1,7 @@
 package ie.atu;
 
+import java.util.Scanner;
+
 public class ArrayDemo {
 
 
@@ -22,6 +24,15 @@ public class ArrayDemo {
         anArray[7] = 800;
         anArray[8] = 900;
         anArray[9] = 1000;
+
+        int indexValue = 0;
+        for(int value: anArray)
+        {
+            System.out.println("Element at index " + indexValue + " : " + value);
+            indexValue++;
+        }
+
+        Scanner myScan = new Scanner(System.in);
 
     }
 }
